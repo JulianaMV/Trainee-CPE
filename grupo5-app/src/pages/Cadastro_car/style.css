@@ -1,0 +1,28 @@
+#titulo-cad-car {
+    text-align: center;
+}
+
+.Card-cad-car {
+    border: 0px solid #000;
+    margin: 20px;
+    border-radius: 15px;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    min-width: 400px;
+    padding: 10px;
+
+    width: 50%;
+    text-align: center;
+}
+
+.Card-Head-cad-car {
+    color: #000;
+}
+
+.Conteudo-cad-car {
+    margin: 20px;
+}

@@ -1,0 +1,172 @@
+#root{
+  width: 100%;
+}
+
+body{
+  /* background: #25283d;  */
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./logo_nosso_4.png");
+  background-color: rgb(34, 32, 32);
+
+  background-position: center;
+  background-repeat: no-repeat; 
+
+  height: 50vw;
+  margin: 0;
+  overflow-y: scroll;
+    
+}
+
+.seletores{
+  margin-top: 40px;
+  list-style-type: none;
+  padding: 20px;
+
+}
+
+.selectTema{
+  margin-bottom: 3px;
+  
+}
+
+h1 {
+  text-align: center;
+  /* color: #000; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
+
+input {
+  background-color: blanchedalmond;
+  border-radius: 6px;
+  margin: 10px;
+  border: 0px;
+  height: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 45%;
+}
+
+label {
+  padding-left: 10px;
+}
+
+button{
+  height: 60px;
+  background-color: rgb(233, 157, 57);
+  font-size: large;
+  border: 0px;
+  border-radius: 7px;
+  width: 35%;
+  margin: 10px;
+  box-shadow:  2px 2px 2px rgba(212, 206, 206, 0.77);
+  
+}
+
+button:hover{
+  background-color: rgb(250, 187, 104);
+  text-decoration: none;
+  box-shadow:  0px 0px 0px rgba(212, 206, 206, 0.77);
+}
+
+dt{
+  margin-left: 0; 
+  margin-bottom: 10px;
+}
+
+.selectLanguage{
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bandeira{
+  width: 40px;
+  height: 25px;
+  margin-right: 2px;
+}
+
+/* Configurações para o switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#666;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(250, 187, 104);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.sol{
+  width: 40px;
+  height: 40px;
+}
+
+.lua{
+  width: 37px;
+  height: 37px;
+}
+
+@media(max-width:650px){
+  .selectLanguage{
+    position: absolute;
+    top: 10px;
+    left: 35vw;
+  }
+
+  .opcoesSelecao{
+    position: absolute;
+    top: 45px;
+    left: 35vw;
+  }
+}
